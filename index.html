@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Delicious Pastries</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fff8f0;
+    }
+    header {
+      background-color: #ff6f61;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav {
+      background-color: #ffccbc;
+      display: flex;
+      justify-content: center;
+      padding: 0.5rem;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: #333;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .menu {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      padding: 1rem;
+    }
+    .item {
+      background: white;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    form {
+      padding: 1rem;
+      background: #fff0e0;
+    }
+    form input, form textarea {
+      width: 100%;
+      margin-bottom: 1rem;
+      padding: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    form button {
+      background-color: #ff6f61;
+      color: white;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    footer {
+      background-color: #ff6f61;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Delicious Pastries</h1>
+    <p>Freshly baked cakes, pies, and more!</p>
+  </header>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Menu</a>
+    <a href="#">Contact</a>
+  </nav>
+  <section class="menu">
+    <div class="item">
+      <h3>Chocolate Cake</h3>
+      <p>Rich and moist chocolate layered cake.</p>
+    </div>
+    <div class="item">
+      <h3>Strawberry Tart</h3>
+      <p>Fresh strawberries on a buttery crust.</p>
+    </div>
+    <div class="item">
+      <h3>Croissants</h3>
+      <p>Flaky, buttery croissants fresh out of the oven.</p>
+    </div>
+  </section>
+  <section>
+    <form>
+      <h2>Contact Us</h2>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+  <footer>
+    <p>&copy; 2025 Delicious Pastries</p>
+  </footer>
+</body>
+</html>
